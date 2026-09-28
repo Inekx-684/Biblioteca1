@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Books.Domain.Exceptions
 {
-    internal class BussinesRuleException
+    internal class BussinesRuleException: Exception
     {
+        public BussinesRuleException(string message): base(message)
+        {
+
+        }
     }
 }
